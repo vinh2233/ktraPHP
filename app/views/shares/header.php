@@ -22,13 +22,13 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?controller=StudentsController&action=add">Thêm sinh vien</a>
-                    <!-- </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php?controller=CategoryController&action=add">Thêm thể loại</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?controller=CategoryController&action=list">Danh sách thể loại</a>
-                    </li> -->
+                        <a class="nav-link" href="index.php?controller=HocPhanController&action=index">Danh sách học phần</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?controller=HocPhanController&action=add">Thêm học phần</a>
+                    </li>
                 </ul>
             </div>
         </div>

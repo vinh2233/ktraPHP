@@ -1,6 +1,7 @@
 <?php
 require_once('app/config/database.php');
 require_once('app/controllers/StudentsController.php');
+require_once('app/controllers/HocPhanController.php');
 
 $controllerName = isset($_GET['controller']) ? $_GET['controller'] : 'StudentsController';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
@@ -26,3 +27,4 @@ if (!method_exists($controllerInstance, $action)) {
 }
 
 $controllerInstance->$action();
+?>
