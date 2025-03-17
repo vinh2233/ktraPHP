@@ -5,7 +5,6 @@
     <h2 class="text-center text-primary mb-4">Chỉnh sửa thông tin sinh viên</h2>
     
     <form action="index.php?controller=StudentsController&action=update" method="POST" enctype="multipart/form-data">
-        <!-- <input type="hidden" name="MaSv" value="<?= htmlspecialchars($student['id']) ?>"> -->
         <input type="hidden" name="old_Hinh" value="<?= htmlspecialchars($student['Hinh']) ?>">
         
         <div class="form-group">

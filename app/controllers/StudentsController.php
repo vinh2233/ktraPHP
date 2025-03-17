@@ -127,5 +127,19 @@ class StudentsController
             }
         }
     }
+    public function show()
+    {
+        $MaSV = filter_input(INPUT_GET, 'MaSV', FILTER_SANITIZE_STRING);
+        if ($MaSV) {
+            $student = $this->studentsModel->getStudentByMaSV($MaSV);
+            if ($student) {
+                include 'app/views/student/show.php';
+            } else {
+                echo "<div class='alert alert-danger'>Lỗi: Không tìm thấy sinh viên!</div>";
+            }
+        } else {
+            echo "<div class='alert alert-danger'>Lỗi: Mã số sinh viên không hợp lệ!</div>";
+        }
+    }
 }
 ?>

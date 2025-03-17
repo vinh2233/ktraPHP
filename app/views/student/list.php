@@ -39,6 +39,10 @@
                             <td><?= htmlspecialchars($student['GioiTinh']) ?></td>
                             <td><?= htmlspecialchars($student['MaNganh']) ?></td>
                             <td>
+                                <a href="index.php?controller=StudentsController&action=show&MaSV=<?= $student['MaSV'] ?>" 
+                                   class="btn btn-info btn-sm">
+                                    <i class="fas fa-eye"></i> Xem
+                                </a>
                                 <a href="index.php?controller=StudentsController&action=edit&MaSV=<?= $student['MaSV'] ?>" 
                                    class="btn btn-warning btn-sm">
                                     <i class="fas fa-edit"></i> Sửa
